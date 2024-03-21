@@ -1,5 +1,5 @@
 const fs = require('fs');
-const fetch = require('node-fetch');
+const fetch = require('node-fetch').default;
 const { Client, GatewayIntentBits, ActivityType, TextChannel } = require('discord.js');
 require('dotenv').config();
 const express = require('express');
