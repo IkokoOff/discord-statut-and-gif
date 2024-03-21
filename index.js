@@ -9,7 +9,7 @@ const token = process.env.TOKEN;
 
 async function updateAvatar() {
     try {
-        const newAvatar = fs.readFileSync('avatar.gif'); // Path to the new avatar image file
+        const newAvatar = fs.readFileSync('standard.gif'); // Path to the new avatar image file
         const response = await fetch('https://discord.com/api/v9/users/@me', {
             method: 'PATCH',
             headers: {
