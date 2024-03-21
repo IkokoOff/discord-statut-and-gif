@@ -1,15 +1,5 @@
 const fs = require('fs');
-let fetch;
-try {
-    fetch = require('node-fetch').default;
-} catch (error) {
-    console.error('Error importing node-fetch:', error);
-}
-
-if (!fetch) {
-    console.error('Error: node-fetch could not be imported.');
-    process.exit(1);
-}
+const fetch = require('node-fetch');
 const { Client, GatewayIntentBits, ActivityType, TextChannel } = require('discord.js');
 require('dotenv').config();
 const express = require('express');
